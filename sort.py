@@ -1,5 +1,8 @@
-#list
-numbers = [43, 54, 12, 67, 35, 20, 5, 9]
+#user input
+numbers = input('Numbers: ')
+numbers = numbers.split(',')
+#str to in
+numbers = [int(n) for n in numbers]
 print("Numbers: " + str(numbers))
 numbers_copy = numbers[:]
 ascend = []
@@ -25,4 +28,4 @@ while len(numbers_copy) != 0:
 
 #output
 print("Ascending: " + str(ascend))
-print("Descending: " + str(descend))    
+print("Descending: " + str(descend))      
