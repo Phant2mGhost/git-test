@@ -1,6 +1,8 @@
+import re
 #user input
 numbers = input('Numbers: ')
-numbers = numbers.split(',')
+numbers = re.split(', |,|-| - |_| _ ', numbers)
+print(numbers)
 #str to in
 numbers = [int(n) for n in numbers]
 print("Numbers: " + str(numbers))
